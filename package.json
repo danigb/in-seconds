@@ -1,27 +1,32 @@
 {
-  "name": "music-time",
-  "version": "1.0.0",
-  "description": "time units conversion for music applications",
+  "name": "in-seconds",
+  "version": "0.0.1",
+  "description": "Time calculation for music applications",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "npm run gen:parser",
-    "test": "jest",
+    "test": "jest --coverage --colors --cache",
     "gen:parser": "nearleyc lib/parser.ne > lib/grammar.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danigb/music-time.git"
+    "url": "git+https://github.com/danigb/in-seconds.git"
   },
-  "keywords": [],
+  "keywords": [
+    "time",
+    "conversion",
+    "music"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/danigb/music-time/issues"
+    "url": "https://github.com/danigb/in-seconds/issues"
   },
-  "homepage": "https://github.com/danigb/music-time#readme",
+  "homepage": "https://github.com/danigb/in-seconds#readme",
+  "dependencies": {
+    "nearley": "^2.7.12"
+  },
   "devDependencies": {
-    "jest": "^18.1.0",
-    "nearley": "^2.7.12",
-    "rollup": "^0.41.4"
+    "jest": "^18.1.0"
   }
 }

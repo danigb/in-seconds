@@ -9,6 +9,7 @@ describe('inSeconds', () => {
     expect(inSeconds('4d', { bpm: 120 })).toBe(0.75)
     expect(inSeconds('4t', { bpm: 120 })).toBe(1 / 3)
     expect(inSeconds('4n + 8n')).toBe(inSeconds('4d'))
+    expect(inSeconds('16n+16n')).toBe(inSeconds('8n'))
     expect(inSeconds('4t+4t+4t')).toBe(inSeconds('2n'))
   })
 

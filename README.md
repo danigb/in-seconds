@@ -1,10 +1,10 @@
-# music-time
+# in-seconds
 
-> time units conversion for music applications
+> time calculation for music applications
+
+[![Build Status](https://travis-ci.org/danigb/in-seconds.svg?branch=master)](https://travis-ci.org/danigb/in-seconds)
 
 __Work in progress__
-
-In it's heart is a library for time conversion:
 
 ```js
 var inSeconds = require('in-seconds')
