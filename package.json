@@ -1,0 +1,27 @@
+{
+  "name": "music-time",
+  "version": "1.0.0",
+  "description": "time units conversion for music applications",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "npm run gen:parser",
+    "test": "jest",
+    "gen:parser": "nearleyc parser/parser.ne > parser/grammar.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danigb/music-time.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danigb/music-time/issues"
+  },
+  "homepage": "https://github.com/danigb/music-time#readme",
+  "devDependencies": {
+    "jest": "^18.1.0",
+    "nearley": "^2.7.12",
+    "rollup": "^0.41.4"
+  }
+}
