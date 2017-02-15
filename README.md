@@ -2,7 +2,7 @@
 
 > time calculation for music applications
 
-[![Build Status](https://travis-ci.org/danigb/in-seconds.svg?branch=master)](https://travis-ci.org/danigb/in-seconds)
+[![Build Status](https://travis-ci.org/danigb/in-seconds.svg?branch=master)](https://travis-ci.org/danigb/in-seconds) [![Coverage](https://codecov.io/github/danigb/in-seconds/coverage.svg)](https://codecov.io/gh/danigb/in-seconds)
 
 __Work in progress__
 
