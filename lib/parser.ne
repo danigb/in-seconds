@@ -16,13 +16,20 @@ MD -> MD _ "*" _ P  {% function(d) {return d[0]*d[4]; } %}
 
 # Parentheses
 P -> "(" _ AS _ ")" {% function(d) {return d[2]; } %}
-    | T              {% id %}
+    | T             {% id %}
 
 # Time
-T -> P "Hz"     {% function(d) { return time.fromHz(d[0]); } %}
-    | P "bpm"   {% function(d) { return time.fromBpm(d[0]); } %}
-    | P "midi"   {% function(d) { return time.fromMidi(d[0]); } %}
+T -> P "Hz"         {% function(d) { return time.fromHz(d[0]); } %}
+    | P "bpm"       {% function(d) { return time.fromBpm(d[0]); } %}
+    | P "midi"      {% function(d) { return time.fromMidi(d[0]); } %}
+    | DUR           {% id %}
     | N             {% id %}
+
+DUR -> FIG "n"  {% function(d) { return time.fromDuration(d[0], 1) } %}
+      | FIG "d"  {% function(d) { return time.fromDuration(d[0], 1.5) } %}
+      | FIG "t"  {% function(d) { return time.fromDuration(d[0], 2/3) } %}
+
+FIG -> "1" | "2" | "4" | "8" | "16" | "32" | "64" | "128"
 
 N -> float          {% id %}
 
