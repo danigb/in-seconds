@@ -42,6 +42,6 @@ No release yet.
 Clone this repo, install dependencies with npm: `npm install` and then run the tests: `npm test`
 
 
-## License
+## License
 
 MIT

@@ -2,7 +2,7 @@
   "name": "in-seconds",
   "version": "0.0.1",
   "description": "Time calculation for music applications",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "pretest": "npm run gen:parser",
     "test": "jest --coverage --colors --cache",
@@ -12,13 +12,9 @@
     "type": "git",
     "url": "git+https://github.com/danigb/in-seconds.git"
   },
-  "keywords": [
-    "time",
-    "conversion",
-    "music"
-  ],
+  "keywords": ["time", "conversion", "music"],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danigb/in-seconds/issues"
   },
@@ -27,6 +23,6 @@
     "nearley": "^2.7.12"
   },
   "devDependencies": {
-    "jest": "^18.1.0"
+    "jest": "^21.2.1"
   }
 }
